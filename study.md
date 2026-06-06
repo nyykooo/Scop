@@ -35,30 +35,6 @@ A sintaxe de cada vértice dentro de uma face segue o formato Vértice/Textura/N
 * s (Smoothing Group - Grupo de Suavização): Define se as faces seguintes devem parecer arredondadas (s 1 ou s on) ou quadradas/facetadas (s off).
 
 ------------------------------
-## Exemplo Prático: Um Quadrado Simples (2D)
-Eis o código bruto de um plano quadrado texturizado com duas faces triangulares:
-
-# Exemplo de um plano quadrado
-mtllib quadrado.mtl
-o Plano
-v 0.0 0.0 0.0
-v 1.0 0.0 0.0
-v 1.0 1.0 0.0
-v 0.0 1.0 0.0
-
-vt 0.0 0.0
-vt 1.0 0.0
-vt 1.0 1.0
-vt 0.0 1.0
-
-vn 0.0 0.0 1.0
-
-usemtl MaterialDoPlano
-s 1
-f 1/1/1 2/2/1 3/3/1
-f 1/1/1 3/3/1 4/4/1
-
-Se desejar, posso explicar como funciona a numeração negativa nos índices das faces (vértices relativos) ou detalhar a estrutura interna do ficheiro .mtl associado. O que prefere analisar a seguir?
 
 [1] [https://www.3d-scantech.com](https://www.3d-scantech.com/pt/what-is-an-obj-file-and-how-to-use-it/)
 [2] [https://www.3d-scantech.com](https://www.3d-scantech.com/pt/what-is-an-obj-file-and-how-to-use-it/)
